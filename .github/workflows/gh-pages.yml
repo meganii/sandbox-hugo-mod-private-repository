@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: config
-        run: git config --global url."https://meganii:${{ secrets.GITHUB_TOKEN }}@github.com".insteadOf  "https://github.com"
+        run: git config --global url."https://meganii:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com".insteadOf  "https://github.com"
       
       - uses: actions/checkout@v2
         with:
