@@ -1,0 +1,4 @@
+{{ $itemId := string ( .Get 0)  }}
+{{ $json := (index .Site.Data.amazon $itemId)  }}
+
+{{ $json }}
