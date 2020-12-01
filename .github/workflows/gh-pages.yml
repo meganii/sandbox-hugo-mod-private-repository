@@ -22,6 +22,9 @@ jobs:
         with:
           hugo-version: '0.77.0'
 
+      - name: Hugo mod
+        run: hugo mod get -u
+
       - name: Build
         run: HUGO_ENV="production" NODE_ENV="production" hugo --gc
 
